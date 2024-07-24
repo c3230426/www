@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+ <html lang="ja">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>岐阜協立大学経営情報学科</title>
+    <style>
+        body {
+            background-color: #f0fff0;
+        }
+        .pro{
+            display: flex;
+        }
+        .header{
+            text-align: center;
+            width: 100%;
+            height: 70px;
+            background-color: white;
+            padding-top: 5px;
+            box-sizing: border-box;
+        }
+        .main{
+            display: flex;
+        }
+        .profile-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 300px;
+            margin: 20px;
+        }
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .profile-card img {
+            width: 100%;
+            height: auto;
+        }
+        .profile-card h2 {
+            margin: 15px 0;
+        }
+        .profile-card p {
+            color: #666;
+            margin: 0 15px 15px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .social-icons a {
+            color: #333;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #0073e6;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 15px;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        @media (max-width: 768px) {
+            .profile-card {
+                width: 90%;
+            }
+        }
+    </style>
+    <script>
+        function followAlert() {
+            alert('You are now following this user!');
+        }
+    </script>
+ </head>
+ <body>
+    <header>
+        <h1>岐阜協立大学 経営学部 経営情報学科</h1>
+    </header>
+    <div class="main">
+        <img src="images.jpg" alt="写真">
+        <p>岐阜協立大学経営学部情報メディア学科は
+            2024年4月、学科名称を「経営情報学科」へと変更し、
+            経営・会計・情報の3分野を融合した学びを強化。
+            社会にとって必要とされているDX人材を育成します。</p>
+        </div>
+    </div>
+    <div class ="pro">
+        <div class="profile-card">
+            <img src="pic_new01.jpg" alt="Profile Image">
+            <h2>経営・マーケティング分野</h2>
+            <p>経営学を体系的に学び、企業やさまざまな組織の運営力を身につけるための科目が、用意されています。</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="2022_03.jpg" alt="Profile Image">
+            <h2>会計・ファイナンス分野</h2>
+            <p>会計情報の意味を適切に理解して、企業の財政状態や経営状況から
+                将来性を推測する力を身につけるための科目が、用意されています。</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="2022_01.jpg" alt="Profile Image">
+            <h2>情報分野</h2>
+            <p>必要不可欠なAI 、IoT、ロボット、クラウド等の
+                デジタルテクノロジーを活用する力を身につけるための科目が、用意されています。</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <ul>
+        <li><a href="page01.html">取得可能な資格</a></li>
+        <li><a href="page02.html">目指す進路</a></li>
+    </ul>
+ </body>
+ </html>
