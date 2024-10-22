@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>変数の演算</h1> 
+<p>a=10、b=4の場合</p>
+<button onclick="showAnser1();">足し算</button>
+<button onclick="showAnser2();">引き算</button>
+<button onclick="showAnser3();">掛け算</button>
+<button onclick="showAnser4();">割り算</button>
+<script>
+
+let a = 10
+let b = 4;
+let c = 0;
+function showAnser1(){
+    c = a + b;
+    alert('答えは' + c + 'です');
+}
+function showAnser2(){
+    c = a - b;
+    alert('答えは' + c + 'です');
+}
+function showAnser3(){
+    c = a * b;
+    alert('答えは' + c + 'です');
+}
+function showAnser4(){
+    c = a / b;
+    alert('答えは' + c + 'です');
+}
+</script>
+</body>
+</html>
