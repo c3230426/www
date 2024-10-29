@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>座席の予約</h1>
+<p id="sample1">東京会場（予約受付中）</p>
+<button onclick="strFunction01()">予約する</button>
+<script>
+    function strFunction01(){
+        var strObj = document.getElementById("sample1").innerHTML;
+        var result = strObj.replace(/（予約受付中）/g,"（予約済み）");
+        document.getElementById("sample1").innerHTML = result;
+    }
+</script>
+</body>
+</html>

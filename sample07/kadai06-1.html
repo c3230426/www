@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>変数の演算</title>
+</head>
+<body>
+    <h1>利用料の計算</h1>
+    <table border="1" style="border-collapse:collapse" width="500" height="200">
+        <tr bgcolor="orange">
+            <th>No.</th>
+            <th>料金(a)</th>
+            <th>人数(b)</th>
+            <th>a×b</th>
+        </tr>
+        <tr>
+            <th bgcolor="orange">0</th>
+            <th align="right">500</th>
+            <th align="right">10</th>
+            <th><button onclick="multiply(0);">利用料の合計</button></th>
+        </tr>
+        <tr>
+            <th bgcolor="orange">1</th>
+            <th align="right">980</th>
+            <th align="right">16</th>
+            <th><button onclick="multiply(1);">利用料の合計</button></th>
+        </tr>
+        <tr>
+            <th bgcolor="orange">2</th>
+            <th align="right">1200</th>
+            <th align="right">8</th>
+            <th><button onclick="multiply(2);">利用料の合計</button></th>
+        </tr>
+    </table>
+    <script>
+        var a = new Array(3);
+        var b = new Array(3);
+        a[0] = 500;
+        a[1] = 980;
+        a[2] = 1200;
+        b[0] = 10;
+        b[1] = 16;
+        b[2] = 8;
+ 
+        function multiply(i){
+            anser = a[i] * b[i];
+            alert('料金は' + anser + '円です');
+        }
+    </script>
+</body>
+</html>
+ 
