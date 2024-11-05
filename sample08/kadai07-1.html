@@ -3,19 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>人口の多い国ランキングt</title>
+    <style>
+      .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .image-container img {
+        margin: 10px 0;
+        width: 200px;
+        height: auto;
+      }
+    </style>
 </head>
 <body>
-<h1>人口の多い国ランキング</h1>
-<p id="sample1">中国</p>
-<button onclick="strFunction01()">予約する</button>
-<script>
-    function strFunction01(){
-        let ulbox = document.getElementById('sample1');
-        for(let i =0; i < flag_CHN.png; i++){
-          ulbox.insertAdjacentHTML('beforeend', '<button>' )
-        }
-    }
+  <h1>人口の多い国ランキング</h1>
+  <p class="textElement">中国</p>
+  <p class="textElement">インド</p>
+  <p class="textElement">アメリカ</p>
+  <p class="textElement">インドネシア</p>
+  <button id="replaceButton">国旗で表示</button>
+  <script>
+    document.getElementById('replaceButton').addEventListener('click', function() {
+      const textElements = document.querySelectorAll('.textElement');
+      const images = ['flag_CHN.png',
+                      'flag_IND.png',
+                      'flag_USA.png',
+                      'flag_IDN.png' ];
+      textElements.forEach((textElement, index) => {
+         const img = document.createElement('img');
+         img.src = images[index];
+         textElement.replaceWith(img);
+      });
+      this.style.display = 'none';
+    });
 </script>
-</body>
 </html>
