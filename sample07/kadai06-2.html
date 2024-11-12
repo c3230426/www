@@ -4,17 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .color{
+            color: red;
+        }
+        .text{
+            display: flex;
+        }
+    </style>
 </head>
 <body>
-<h1>座席の予約</h1>
-<p id="sample1">東京会場（予約受付中）</p>
-<button onclick="strFunction01()">予約する</button>
+    <h1>座席の予約</h1>
+        <div class="text">
+            <p>東京会場</p>
+            <p id="sample1" class="color">(予約受付中)</p>
+        </div>
+       
+        <button id="sample2">予約する</button>
+    </div>
+    <p id="sample3" style="display: none">ありがとうございます</p>
 <script>
-    function strFunction01(){
-        var strObj = document.getElementById("sample1").innerHTML;
-        var result = strObj.replace(/（予約受付中）/g,"（予約済み）");
-        document.getElementById("sample1").innerHTML = result;
-    }
+    document.getElementById('sample2').addEventListener('click', function() {
+        const sample1 = document.getElementById('sample1');
+        const sample3 = document.getElementById('sample3');
+        sample1.textContent = '(予約済み)';
+        sample3.style.display = 'block';
+        this.style.display = 'none';
+    });
 </script>
-</body>
 </html>
