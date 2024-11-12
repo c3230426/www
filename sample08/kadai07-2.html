@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang=”ja”>
 <head>
-<meta charset="UTF-8">
+<meta charset=”UTF-8″>
+<title></title>
 </head>
 <body>
     <h1>写真の一覧</h1>
     <p>以下のボタンをクリックすると、写真が一覧表示されます。</p>
-    <button id="showImagesButton">画像を表示する</button>
-    <div class="image-container" id="imageContainer"></div>
-    <script> document.getElementById('showImagesButton').addEventListener('click', function() {
-        const imageContainer = document.getElementById('imageContainer');
+    <button id="sample01">画像を表示する</button>
+    <div class="image-container" id="sample02"></div>
+ 
+<script>
+    document.getElementById('sample01').addEventListener('click', function() {
+        const sample02 = document.getElementById('sample02');
         const images = [ 'photo_1.jpg', 'photo_2.jpg', 'photo_3.jpg', 'photo_4.jpg', 'photo_5.jpg', 'photo_6.jpg', 'photo_7.jpg', 'photo_8.jpg' ];
+        let htmlString = '';
         images.forEach(src => {
-            const img = document.createElement('img');
-            img.src = src; imageContainer.appendChild(img);
-            });
-            this.style.display = 'none';
+             htmlString += `<img src="${src}" alt="Image">`;
         });
+        sample02.insertAdjacentHTML('beforeend', htmlString);
+        this.style.display = 'none';
+    });
     </script>
+</body>
 </html>
