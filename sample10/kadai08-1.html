@@ -10,16 +10,16 @@
     <button id="btn" onclick="show()">ヒント</button>
     <p id="text">（注意）北海道は「県」ではありません。</p>
 <script>
-    let clickTime = 0;
-    document.getElementById('btn').addEventListener('clickTime', function(){
-        clickTime++;
+    let click = 0;
+    document.getElementById('btn').addEventListener('click', function(){
+        click++;
         const ch = document.getElementById('text');
-        ch.textContent = '東北地方にあります。'
+        text.textContent = '東北地方にあります。'
         const btn = document.getElementById('btn');
         btn.textContent = '答えを見る'
-        if(clickTime == 2){
-            const ch = document.getElementById('text');
-        text.textContent = '答えは「岩手県」です。'
+        if(click == 2){
+            const text = document.getElementById('text');
+        ch.textContent = '答えは「岩手県」です。'
         }
     })
 </script>
