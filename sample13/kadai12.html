@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ 
+<html lang="ja">
+ 
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+    .result{
+        font-size: 20px;
+        display:inline-block;
+        margin-top: 5%;
+        background-color: rgb(254, 177, 35);
+    }
+</style>
+</head>
+<body>
+<h1>1～10で割り切れる数字</h1>
+<p>1、2、3、4、5、6、7、8、9、10で</br>割り切れる最小の数値をJavaScriptで求めます。</p>
+<div><button onclick="findLCM()">結果を見る</button> </div>
+<div id="message" class="result">ここに結果が表示されます。</div>
+<script>
+    function isDivisible(num) {
+        for (let i = 1; i <= 10; i++) {
+            if (num % i !== 0) {
+                return false;
+            }
+        } return true;
+    } function findLCM() {
+        let num = 1;
+        while (true) {
+            if (isDivisible(num)) {
+                document.getElementById('message').textContent = `答え${num} です。`;
+                break;
+            } num++;
+        }
+    }
+</script>
+</body>
+ 
+</html>
